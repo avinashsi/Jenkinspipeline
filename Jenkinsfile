@@ -16,7 +16,7 @@ pipeline {
                 }
           stage('Compile_Maven_Code') {
               steps {
-                mvn clean package
+                mvn clean package,
                 }
              }
 
