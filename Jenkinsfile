@@ -14,11 +14,11 @@ pipeline {
 
                   }
                 }
-          stage('Compile_Maven_Code') {
-              steps {
-                mvn clean package,
-                }
-             }
+    //      stage('Compile_Maven_Code') {
+    //          steps {
+    //            mvn clean package,
+    //            }
+    //         }
 
 // This is where Things Should go TO nexus Commenting out due to memory issues ///////
 
