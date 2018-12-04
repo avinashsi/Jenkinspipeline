@@ -1,5 +1,10 @@
 pipeline {
          agent any
+
+         environment {
+            PATH = "$PATH:/usr/maven/bin"
+          }
+
          stages {
          stage('Checkout external proj') {
               steps {
@@ -11,8 +16,7 @@ pipeline {
                 }
           stage('Compile_Maven_Code') {
               steps {
-              export PATH=$PATH:/usr/maven/bin
-              mvn clean package
+                mvn clean package
                 }
              }
 
